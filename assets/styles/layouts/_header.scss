@@ -4,9 +4,14 @@
     top: 0;
   }
 
+  .btn-sm {
+    border-radius: 0;
+  }
+  
   .btn-primary {
+    color: #888;
     background-color: #e5e5e5;
-    color: #ccc;
+    border-color: #bebebe;
   }
 }
 

@@ -6,8 +6,8 @@
 
 .custom-logo-link img {
   width: auto;
-  max-height: 100px;
-  margin: 25px 0;
+  margin: $custom-logo-link-margin;
+  max-height: $custom-logo-link-max-height;
 }
 
 .brand {

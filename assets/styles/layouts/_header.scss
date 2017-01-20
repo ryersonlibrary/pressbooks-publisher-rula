@@ -2,6 +2,7 @@
   padding-bottom: 4em;
   text-align: center;
   background: $header-bg;
+  color: #fcfcfc;
 }
 
 .custom-logo-link img {
@@ -12,7 +13,6 @@
 
 .brand {
   @extend h1;
-  color: #fcfcfc;
   display: block;
   margin: 30px 0 20px 0;
   font-size: 3.75em;

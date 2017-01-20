@@ -1,5 +1,6 @@
-<header class="banner">
-  <div class="container">
+<nav class="top-nav">
+	<div class="container">
+		<div class="logo"><?php the_custom_logo(); ?></div>
     <div class="link-wrap">
 		<?php if ( is_user_logged_in() ) {
 			if ( is_super_admin() || is_user_member_of_blog() ) { ?>
@@ -22,7 +23,10 @@
 			} ?>
 		<?php } ?>
 		</div>
-		<div class="logo"><?php the_custom_logo(); ?></div>
+	</div>
+</nav>
+<header class="banner">
+  <div class="container">
 		<a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
 		<h2><?php bloginfo( 'description' ); ?></h2>
 		<?php if ( get_theme_mod( 'pressbooks_publisher_intro_textbox' ) !== '' ) { ?>

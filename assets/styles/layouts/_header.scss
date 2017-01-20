@@ -7,11 +7,15 @@
   .btn-sm {
     border-radius: 0;
   }
-  
+
   .btn-primary {
     color: #888;
     background-color: #e5e5e5;
     border-color: #bebebe;
+
+    &:hover {
+      background-color: #fafafa;
+    }
   }
 }
 

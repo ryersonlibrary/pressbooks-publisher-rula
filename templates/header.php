@@ -25,10 +25,13 @@
 		</div>
 	</div>
 </nav>
+
 <header class="banner">
-  <div class="container">
+	<div class="container branding">
 		<a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
 		<h2><?php bloginfo( 'description' ); ?></h2>
+	</div>
+  <div class="container intro">
 		<?php if ( get_theme_mod( 'pressbooks_publisher_intro_textbox' ) !== '' ) { ?>
 			<?php if ( 'one-column' == get_theme_mod( 'pressbooks_publisher_intro_text_col' ) ) { ?>
 			<div class="intro-text one-column">

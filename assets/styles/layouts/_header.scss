@@ -27,8 +27,7 @@
 .banner {
   padding-bottom: 4em;
   text-align: center;
-  background: $header-bg;
-  color: #fcfcfc;
+  color: #333;
 }
 
 .custom-logo-link img {
@@ -36,11 +35,22 @@
   margin: 10px 0;
 }
 
+.container.branding {
+  background: $header-bg;
+  color: #fcfcfc;
+}
+
+
 .brand {
   @extend h1;
   display: block;
   margin: 50px 0 20px 0;
   font-size: 3.75em;
+}
+
+.container.intro {
+  background: #ffdc00;
+  color: #333;
 }
 
 .intro-text {

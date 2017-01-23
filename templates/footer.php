@@ -11,16 +11,13 @@
 	</div><!-- #content -->
 
 	<footer class="content-info">
-		<?php $contentinfo = sprintf(
-			'%s <a href="%s">%s</a>',
-			__( 'Powered by', 'pressbooks' ),
-			esc_url( 'https://pressbooks.com' ),
-			'Pressbooks'
-		);
-		printf(
-			'<div class="container">%s</div> <!-- .container -->',
-			apply_filters( 'pressbooks_publisher_content_info', $contentinfo )
-		); ?>
+		<?php if ( get_theme_mod( 'pressbooks_publisher_footer_message' ) !== '' ) { ?>
+			<?php $contentinfo = get_theme_mod( 'pressbooks_publisher_footer_message' );
+			printf(
+				'<div class="container">%s</div> <!-- .container -->',
+				apply_filters( 'pressbooks_publisher_content_info', $contentinfo )
+			); ?>
+		<?php } ?>
 	</footer><!-- .content-info -->
 </div><!-- #page -->
 

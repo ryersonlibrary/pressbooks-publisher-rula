@@ -58,6 +58,32 @@ function customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->remove_section( 'static_front_page' );
+
+	$wp_customize->add_section( 'pressbooks_publisher_footer',
+		array(
+			'title' => __( 'Footer', 'pressbooks' ),
+			'description' => __( 'Customize the footer message' ),
+			'priority' => 40,
+		)
+	);
+
+	$wp_customize->add_setting(
+		'pressbooks_publisher_footer_message',
+		array(
+			'default' => 'Powered by <a href="https://pressbooks.com">Pressbooks</a>',
+			'sanitize_callback' => __NAMESPACE__ . '\\sanitize_text',
+		)
+	);
+
+	$wp_customize->add_control(
+		'pressbooks_publisher_footer_message',
+		array(
+			'label' => __( 'Footer message', 'pressbooks' ),
+			'section' => 'pressbooks_publisher_footer',
+			'type' => 'textarea',
+		)
+	);
+
 }
 
 add_action( 'customize_register', __NAMESPACE__ . '\\customize_register' );

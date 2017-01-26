@@ -28,7 +28,7 @@
 
 <header class="banner">
 	<div class="container branding">
-		<a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+		<h1 class="brand"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 		<h2><?php bloginfo( 'description' ); ?></h2>
 	</div>
   <div class="container intro">

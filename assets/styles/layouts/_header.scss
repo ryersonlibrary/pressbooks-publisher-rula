@@ -50,10 +50,14 @@
   display: block;
   margin: 0;
   font-size: 3.75em;
+
+  a:hover, a:focus, a:active {
+    color: #ffdc00;
+    text-decoration: none;
+  }
 }
 
 .container.intro {
-  background: #ffdc00;
   color: #333;
   position: relative;
 }

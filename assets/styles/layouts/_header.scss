@@ -51,6 +51,10 @@
   margin: 0;
   font-size: 3.75em;
 
+  a {
+    color: #fcfcfc;
+  }
+
   a:hover, a:focus, a:active {
     color: #ffdc00;
     text-decoration: none;
